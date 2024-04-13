@@ -1,4 +1,4 @@
-function selectionSort(array) {
+const selectionSort = (array) => {
   for (let i = 0; i < array.length; i++) {
     let minIndex = i;
     for (let j = i + 1; j < array.length; j++) {
@@ -9,8 +9,8 @@ function selectionSort(array) {
     [array[i], array[minIndex]] = [array[minIndex], array[i]];
   }
   console.log(array);
-}
+};
 
-const array = [1351, 6531, 651, 651, 6651, 351, 6, 2, 1, 5, 3, 6, 5, 29];
+const array = [6, 2, 1, 5, 3, 6, 5, 29];
 
 selectionSort(array);
